@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Glory', sans-serif;
+}
+#map{
+    height: 100vh;
+    flex: 3;
+    
+}
+.containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-panel{
+    flex: 0.7;
+    background-color: black;
+    color: #474747;
+}
+.right-panel{
+    flex: 0.9;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.panel-head{
+    color: red;
+    text-align: center;
+    margin: 5px;
+    font-size: 17px;
+    background-color: #474747;
+}
+.displayboardTwo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px
+}
+.displayboardTwo div{
+    color: greenyellow;
+}
+
+.displayBoardThree{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px
+}
+.displayBoardThree div{
+    color: cyan;
+}
+.panel-info{
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    background-color: #474747;
+}
+.panel-footer{
+    background-color: #474747;
+    margin: 5px;
+}
+.right-panel-heading{
+    display: flex;
+}
+.death-panel{
+    padding: 10px;
+    flex: 50%;
+    background-color: #474747;
+    border: 1px solid #474747;
+    margin: 5px;
+    font-size: 11px;
+}
+.recovered-panel{
+    padding: 5px;
+    background-color: #474747;
+    border: 1px solid #474747;
+    margin: 5px;
+    flex: 50%;
+    font-size: 11px;
+}
+.death-row, .recovered-row{
+    padding: 5px;
+    background-color: #474747;
+    border: 1px solid #474747;
+    margin: 5px;
+    flex: 50%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.right-panel-info{
+    display: flex;
+    height: 45vh;
+    
+}
+.select-options{
+    height: 50px;
+    font-size: 22px;
+    width: 150px;
+    background-color: #474747;
+    z-index: 1000;
+    position: absolute;
+    left: 80%;
+    top: 1%;
+
+}
+.states{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    color: white;
+}
+.states div{
+    color: red;
+}
+select{
+    padding: 10px;
+    background-color: #474747;
+    color: #fff;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+	height: 7px;
+	width: 7px;
+	background: #404040;
+}
+
+::-webkit-scrollbar-corner {
+	background: #404040;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #5c5c5c;
+}
