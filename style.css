@@ -136,3 +136,59 @@ select{
 ::-webkit-scrollbar-thumb {
 	background: #5c5c5c;
 }
+.mobile-tabs{
+    display: flex;
+    margin-left: 10px;
+    
+}
+.stats button, .charts button{
+    margin: 10px;
+    background-color: #404040;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 23px;
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    display: none;
+}
+/* table style */
+.table{
+    overflow: scroll;
+    height: 60vh;
+    background: rgb(12, 10, 10);
+   width: 550px;
+   display: none;
+}
+table{
+    font-size: 30px;
+    color: white;
+    overflow: scroll;
+    margin: 15px;
+}
+tr,td{
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Responsiveness */
+@media screen and (max-width:990px) {
+    .right-panel{
+        display: none;
+    }
+    .left-panel{
+        display: none;
+    }
+    .stats button, .charts button{
+       
+        display: block;
+    }
+    .select-options{
+        position: absolute;
+
+    }
+}

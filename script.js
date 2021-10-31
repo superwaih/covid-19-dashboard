@@ -58,6 +58,7 @@ function style(feature) {
 }
 //          The select options to change the styles
 var selectBox = document.getElementById('select');
+
 selectBox.onchange = function change(){
     var displaytext = selectBox.options[selectBox.selectedIndex].value;
     // console.log(displaytext)
@@ -214,22 +215,16 @@ $.getJSON("germany.json", function(json){
    }
 })
 
-                            // Function to select the select options
-// var selectBox = document.getElementById('select');
-// selectBox.onchange = function change(){
-//     var displaytext = selectBox.options[selectBox.selectedIndex].value;
-//     // console.log(displaytext)
-//     if(displaytext == 'confirmed'){
-//         console.log('double')
-        
-//     } else if(displaytext == 'deaths'){
-//         console.log('death choke')
-//     }else{
-//         console.log('who cares')
-//     }
-// }
+// Mobile Section
+const statsBtn = document.getElementById('stats')
+statsBtn.onclick = () =>{
 
-// console.log(result)
+    
+}
+
+
+
+
 
 // for(i = 0; i < selectBox.length; i++){
 //     if(selectBox.value[i] = 'Confirmed'){
